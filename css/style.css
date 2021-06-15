@@ -3,6 +3,7 @@
   --secondary-font: "Fraunces", serif;
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
+  --blue: hsl(202, 99%, 66%);
   --dark-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
   --cyan: hsl(168, 34%, 41%);
@@ -13,6 +14,34 @@
   --white: hsl(0, 0%, 100%);
 }
 
+.body {
+  font-family: var(--primary-font);
+}
+p {
+  font-family: var(--primary-font);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+button {
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -20,6 +49,55 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-.body {
-  font-family: var(--primary-font);
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.container > * {
+  grid-column: 1/-1;
+}
+.header {
+  grid-column: 1/-1;
+  color: var(--white);
+  background: url("../images/mobile/image-header.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0vw 6.3vw;
+}
+.nav {
+  display: flex;
+}
+.header-nav {
+  display: none;
+}
+.header-nav .active {
+  display: flex;
+}
+.navbar {
+  padding: 7.7vw 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__hero {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 8vw 4vw 33vw 4vw;
+}
+.header__text {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.4rem;
+  padding-bottom: 6vw;
+}
+
+.button__scrol-down img {
+  width: 40px;
+  height: auto;
 }
