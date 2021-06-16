@@ -166,3 +166,31 @@ img {
 .article--design {
   background-image: url("../images/mobile/image-graphic-design.jpg");
 }
+.testimonials {
+  padding: 13vw 6.5vw 19vw;
+}
+.testimonials__header {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13vw 0vw 0vw;
+}
+.testimonial-card__img {
+  border-radius: 50%;
+  width: 19vw;
+  height: auto;
+}
+.testimonial-card__text {
+  padding: 5vw 0 0vw;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+.testimonial-card__client-name {
+  margin-bottom: 0;
+  line-height: 1.1rem;
+}
