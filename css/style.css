@@ -167,18 +167,19 @@ img {
   background-image: url("../images/mobile/image-graphic-design.jpg");
 }
 .testimonials {
-  padding: 13vw 6.5vw 19vw;
+  padding: 12vw 6.5vw 19vw;
 }
 .testimonials__header {
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 0.2rem;
+  padding-bottom: 1vw;
 }
 .testimonial-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 13vw 0vw 0vw;
+  padding: 11vw 0vw 2vw;
 }
 .testimonial-card__img {
   border-radius: 50%;
@@ -186,11 +187,15 @@ img {
   height: auto;
 }
 .testimonial-card__text {
-  padding: 5vw 0 0vw;
+  padding: 4vw 0 0vw;
   font-size: 1.1rem;
   line-height: 1.9rem;
 }
 .testimonial-card__client-name {
   margin-bottom: 0;
   line-height: 1.1rem;
+}
+.galery-img {
+  grid-column: span 1;
+  line-height: 0;
 }
