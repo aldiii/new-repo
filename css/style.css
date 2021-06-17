@@ -8,7 +8,7 @@
   --dark-blue: hsl(198, 62%, 26%);
   --cyan2: hsl(168, 34%, 41%);
   --cyan: hsl(167, 44%, 70%);
-  --dark-blue: hsl(212, 27%, 19%);
+  --very-dark-blue: hsl(212, 27%, 19%);
   --very-dark-gray: hsl(213, 9%, 39%);
   --dark-gray: hsl(232, 10%, 55%);
   --gray: hsl(210, 4%, 67%);
@@ -44,13 +44,6 @@ li {
 img {
   width: 100%;
   height: auto;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 
 .container {
@@ -114,6 +107,7 @@ img {
 }
 .article__title {
   font-size: 2rem;
+  color: var(--very-dark-blue);
 }
 .article__text {
   font-size: 1.2rem;
@@ -127,6 +121,7 @@ img {
   padding: 2vw;
   position: relative;
   margin: 1vw;
+  color: var(--very-dark-blue);
 }
 .btn__learn-more::after {
   content: "";
@@ -161,6 +156,14 @@ img {
 .article-background__text {
   line-height: 1.8rem;
 }
+.article-background__text--green,
+.article-background__title--green {
+  color: var(--dark-cyan);
+}
+.article-background__text--blue,
+.article-background__title--blue {
+  color: var(--dark-blue);
+}
 .article--photography {
   background-image: url("../images/mobile/image-photography.jpg");
 }
@@ -175,6 +178,7 @@ img {
   font-size: 1.1rem;
   letter-spacing: 0.2rem;
   padding-bottom: 1vw;
+  color: var(--gray);
 }
 .testimonial-card {
   display: flex;
@@ -195,6 +199,10 @@ img {
 .testimonial-card__client-name {
   margin-bottom: 0;
   line-height: 1.1rem;
+  color: var(--very-dark-blue);
+}
+.testimonial-card__cilent-info {
+  color: var(--gray);
 }
 .galery-img {
   grid-column: span 1;
@@ -232,4 +240,12 @@ img {
 
 .footer__social li {
   margin: auto;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-cyan);
+}
+.attribution a {
+  color: var(--very-dark-blue);
 }
