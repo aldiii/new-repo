@@ -31,13 +31,29 @@
               class="navbar__logo"
             />
           </a>
-          <ul class="nav header-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav header-nav" id="header-nav">
+            <li class="header-nav__li">
+              <a class="header-nav__link" href="#about">About</a>
+            </li>
+            <li class="header-nav__li">
+              <a class="header-nav__link" href="#services">Services</a>
+            </li>
+            <li class="header-nav__li">
+              <a class="header-nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="header-nav__li">
+              <a
+                class="header-nav__link header-nav__link--yellow"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
           </ul>
-          <button class="button--burger btn" aria-label="Burger menu">
+          <button
+            id="btn--burger"
+            class="button--burger btn"
+            aria-label="Burger menu"
+          >
             <img src="./images/icon-hamburger.svg" alt="" />
           </button>
         </nav>
@@ -48,16 +64,16 @@
           </button>
         </div>
       </header>
-      <div class="article-img">
-        <picture>
-          <source
-            media="(min-width:650px)"
-            srcset="./images/desktop/image-transform.jpg"
-          />
-          <img src="./images/mobile/image-transform.jpg" alt="" />
-        </picture>
-      </div>
-      <main id="about" class="article article--about">
+
+      <picture class="article-img article-about-img">
+        <source
+          media="(min-width:650px)"
+          srcset="./images/desktop/image-transform.jpg"
+        />
+        <img src="./images/mobile/image-transform.jpg" alt="" />
+      </picture>
+
+      <main id="about" class="article article-about">
         <h2 class="article__title">Transform your brand</h2>
         <p class="article__text">
           We are a full-service creative agency specializing in helping brands
@@ -68,16 +84,14 @@
           Learn more
         </button>
       </main>
-      <div class="article-img">
-        <picture>
-          <source
-            media="(min-width:650px)"
-            srcset="./images/desktop/image-stand-out.jpg"
-          />
-          <img src="./images/mobile/image-stand-out.jpg" alt="" />
-        </picture>
-      </div>
-      <article id="about" class="article article--about">
+      <picture class="article-img article-audience-img">
+        <source
+          media="(min-width:650px)"
+          srcset="./images/desktop/image-stand-out.jpg"
+        />
+        <img src="./images/mobile/image-stand-out.jpg" alt="" />
+      </picture>
+      <article id="about" class="article article-audience">
         <h2 class="article__title">Stand out to the right audience</h2>
         <p class="article__text">
           Using a collaborative formula of designers, researchers,
@@ -108,44 +122,46 @@
       </article>
       <section class="testimonials">
         <h2 class="testimonials__header">Client testimonials</h2>
-        <div class="testimonial-card card">
-          <img
-            src="./images/image-emily.jpg"
-            alt="Emily R."
-            class="testimonial-card__img"
-          />
-          <p class="testimonial-card__text">
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <h3 class="testimonial-card__client-name">Emily R.</h3>
-          <p class="testimonial-card__cilent-info">Marketing Director</p>
-        </div>
-        <div class="testimonial-card card">
-          <img
-            src="./images/image-thomas.jpg"
-            alt="Thomas S."
-            class="testimonial-card__img"
-          />
-          <p class="testimonial-card__text">
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <h3 class="testimonial-card__client-name">Thomas S.</h3>
-          <p class="testimonial-card__cilent-info">Chief Operating Officer</p>
-        </div>
-        <div class="testimonial-card card">
-          <img
-            src="./images/image-jennie.jpg"
-            alt="Jennie F."
-            class="testimonial-card__img"
-          />
-          <p class="testimonial-card__text">
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <h3 class="testimonial-card__client-name">Jennie F.</h3>
-          <p class="testimonial-card__cilent-info">Business Owner</p>
+        <div class="testimonial__cards">
+          <div class="testimonial-card card">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Emily R."
+              class="testimonial-card__img"
+            />
+            <p class="testimonial-card__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h3 class="testimonial-card__client-name">Emily R.</h3>
+            <p class="testimonial-card__cilent-info">Marketing Director</p>
+          </div>
+          <div class="testimonial-card card">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Thomas S."
+              class="testimonial-card__img"
+            />
+            <p class="testimonial-card__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h3 class="testimonial-card__client-name">Thomas S.</h3>
+            <p class="testimonial-card__cilent-info">Chief Operating Officer</p>
+          </div>
+          <div class="testimonial-card card">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Jennie F."
+              class="testimonial-card__img"
+            />
+            <p class="testimonial-card__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h3 class="testimonial-card__client-name">Jennie F.</h3>
+            <p class="testimonial-card__cilent-info">Business Owner</p>
+          </div>
         </div>
       </section>
       <picture class="galery-img galery-img--1">
@@ -241,5 +257,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
