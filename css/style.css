@@ -273,6 +273,7 @@ picture {
 
 .footer__nav {
   width: 100%;
+  max-width: 22em;
 }
 .footer__nav .nav {
   margin: 2.6rem 0;
@@ -288,6 +289,7 @@ picture {
 .footer__social {
   padding: 2.2rem 0 1rem;
   width: 55%;
+  max-width: 12rem;
   justify-content: center;
 }
 
@@ -302,7 +304,7 @@ picture {
 .attribution a {
   color: var(--very-dark-blue);
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
     display: grid;
@@ -367,7 +369,9 @@ picture {
     text-align: left;
     margin: 0.5rem 0;
   }
-
+  .article-background {
+    background-position: center;
+  }
   .article-background__text {
     width: 50%;
   }
@@ -388,12 +392,19 @@ picture {
   .testimonial__cards {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2.2rem 0;
   }
   .testimonial-card {
     margin: 3rem 0.2rem 0rem;
   }
   .testimonial-card__text {
     margin: 3.5rem 0;
+  }
+  .footer {
+    padding: 4.5rem 1rem 1rem;
+  }
+
+  .footer__nav {
+    width: 25%;
   }
 }
