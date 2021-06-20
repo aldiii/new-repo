@@ -146,8 +146,10 @@ picture {
   letter-spacing: 0.4rem;
   margin: 3.2rem 0;
 }
-
-.button__scrol-down img {
+.btn--scroll-down {
+  animation: buttonAnimation 1s infinite;
+}
+.btn--scroll-down img {
   width: 2.5rem;
   height: auto;
 }
@@ -458,5 +460,13 @@ picture {
   100% {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+@keyframes buttonAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3rem);
   }
 }
