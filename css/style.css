@@ -29,6 +29,7 @@ h2,
 h3 {
   font-family: var(--secondary-font);
   text-align: center;
+  overflow: hidden;
 }
 button {
   background: none;
@@ -51,6 +52,8 @@ img {
 }
 picture {
   line-height: 0;
+  min-height: 2rem;
+  min-width: 2rem;
 }
 .container {
   margin: 0 auto;
@@ -145,6 +148,7 @@ picture {
   line-height: 1.2;
   letter-spacing: 0.4rem;
   margin: 3.2rem 0;
+  animation: zoomIn 2s cubic-bezier(0.55, 0, 0.1, 1) forwards;
 }
 .btn--scroll-down {
   animation: buttonAnimation 1s infinite;
@@ -422,6 +426,9 @@ picture {
   .article-background {
     background-position: center;
   }
+  .article-background__title {
+    overflow: visible;
+  }
   .article-background__text {
     width: 50%;
   }
@@ -451,11 +458,25 @@ picture {
   }
 }
 
+.fadeInDown {
+  animation: fadeInDown 0.7s cubic-bezier(0.55, 0, 0.1, 1) both paused;
+}
+.zoomIn {
+  transform-origin: top center;
+  animation: zoomIn 0.7s cubic-bezier(0.55, 0, 0.1, 1) both paused;
+}
+.fadeIn {
+  animation: fadeIn 1s ease both paused;
+}
+.inView {
+  animation-play-state: running;
+}
+
 /*animacje */
 @keyframes show {
   0% {
     opacity: 0;
-    transform: scaleY(0.1);
+    transform: scaleY(0.3);
   }
   100% {
     opacity: 1;
@@ -468,5 +489,34 @@ picture {
   }
   100% {
     transform: translateY(3rem);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
