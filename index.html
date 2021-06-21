@@ -33,17 +33,24 @@
           </a>
           <ul class="nav header-nav" id="header-nav">
             <li class="header-nav__li">
-              <a class="header-nav__link" href="#about">About</a>
+              <a class="header-nav__link smooth-scroll" href="#about">About</a>
             </li>
             <li class="header-nav__li">
-              <a class="header-nav__link" href="#services">Services</a>
+              <a class="header-nav__link smooth-scroll" href="#services"
+                >Services</a
+              >
             </li>
             <li class="header-nav__li">
-              <a class="header-nav__link" href="#projects">Projects</a>
+              <a class="header-nav__link smooth-scroll" href="#projects"
+                >Projects</a
+              >
             </li>
             <li class="header-nav__li">
               <a
-                class="header-nav__link header-nav__link--highlighted"
+                class="
+                  header-nav__link header-nav__link--highlighted
+                  smooth-scroll
+                "
                 href="#contact"
                 >Contact</a
               >
@@ -59,7 +66,10 @@
         </nav>
         <div class="header__hero">
           <h1 class="header__text">We are creatives</h1>
-          <button class="btn btn--scroll-down" aria-label="scroll-down">
+          <button
+            class="btn btn--scroll-down smooth-scroll"
+            aria-label="scroll-down"
+          >
             <img src="./images/icon-arrow-down.svg" alt="" />
           </button>
         </div>
@@ -121,6 +131,7 @@
         </button>
       </article>
       <article
+        id="services"
         class="article--design article-background animatedOnScroll fadeIn"
       >
         <h2 class="article-background__title article-background__title--green">
@@ -194,7 +205,10 @@
           </div>
         </div>
       </section>
-      <picture class="galery-img galery-img--1 animatedOnScroll fadeIn">
+      <picture
+        class="galery-img galery-img--1 animatedOnScroll fadeIn"
+        id="projects"
+      >
         <source
           media="(min-width:768px)"
           srcset="./images/desktop/image-gallery-milkbottles.jpg"
@@ -238,7 +252,7 @@
         />
       </picture>
 
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <img
           src="./images/logo-footer.svg"
           alt="sunnyside logo"
@@ -246,9 +260,9 @@
         />
         <nav class="footer__nav">
           <ul class="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Projects</a></li>
+            <li><a class="smooth-scroll" href="#about">About</a></li>
+            <li><a class="smooth-scroll" href="#services">Services</a></li>
+            <li><a class="smooth-scroll" href="#projects">Projects</a></li>
           </ul>
         </nav>
         <ul class="nav footer__social">
@@ -292,11 +306,12 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Aldona Tomzik</a>.
+          >. Coded by <a href="https://aldiii.github.io">Aldona Tomzik</a>.
         </div>
       </footer>
     </div>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/scroll-animation.js"></script>
+    <script src="./js/scroll-to-element.js"></script>
   </body>
 </html>
